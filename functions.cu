@@ -107,7 +107,7 @@ __device__ unsigned int atomic_inc_CAS(unsigned int* address, unsigned int max) 
     return old_value;
 }
 
-__device unsigned int atomic_add_CAS(unsigned int *address, unsigned int val) {
+__device__ unsigned int atomic_add_CAS(unsigned int *address, unsigned int val) {
     unsigned int old_value;
 
     do {
